@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@minecraft/server": "^1.0.0-preview.1.19.60.22"
+  }
+}
