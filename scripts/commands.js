@@ -48,12 +48,13 @@ function feedCommand(sender) {
     sender.playSound("random.burp");
     sender.sendMessage("§7§oYou start to feel full...");
 }
-
+// TODO - Add target variable
 function healCommand(sender) {
     sender.getComponent("health").resetToMaxValue();
     sender.sendMessage("§7§oAhhhh...");
 }
-    
+
+// TODO - Add target variable
 function gmCommand(sender, mode) {
     const validModes = ["a", "s", "c", "sp", "adventure", "survival", "creative", "spectator"];
     if (validModes.includes(mode)) {
@@ -64,12 +65,14 @@ function gmCommand(sender, mode) {
     }
 }
 
+// TODO - Add target variable
 function iCommand(sender, item, amount = "1") {
     let result = "give @s ";
         result = result.concat(item, " ", amount);
         sender.runCommandAsync(result);
 }
 
+// TODO - Add target variable
 function heartsCommand(sender, amount) {
     let intAmount = parseFloat(amount) * 2;
     sender.getComponent("health").setCurrent(parseInt(intAmount));
